@@ -1,4 +1,4 @@
-site_name: Docs Flutter ERP
+site_name: Docs Guia de desenvolvimento mobile 
 
 markdown_extensions:
   - pymdownx.highlight
