@@ -14,6 +14,8 @@ Instruções de como criar um modulo
 
 ![Arquitetura de um modulo](assets/arq_modulo.png)
 
+
+
 Nos próximos passos iremos preencher os conteúdos dos arquivos criados, por enquanto podem ficar vazios. 
 
 
