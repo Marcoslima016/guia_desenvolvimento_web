@@ -28,7 +28,7 @@ Nesse próximo passo iremos entender cada arquivo que compõe a estrutura de um 
 
 O arquivo que possui a extensão ***".modulo"*** é o arquivo de acesso e configuração do nosso modulo. Esse arquivo disponibiliza a view e o controller do nosso modulo. Confira abaixo como deve ficar o conteúdo do arquivo, utilizando como exemplo um modulo chamado "produtos". 
 
-```dart  hl_lines="9 12 15-20" linenums="1"
+``` dart  hl_lines="9 12 16-19 24-26" linenums="1"
 import 'package:custom_app/custom_app/custom_app.imports.dart';
 import 'package:custom_app/custom_app/web_app/web_app.imports.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +40,7 @@ class Produtos implements WebAppModulo {
   String displayName = "Produtos";
 
   @override
-  int idModulo = 1; /* (1) */  
+  int idModulo = 1; 
 
   @override
   WebModuleView get view => WebModuleView.basic(
@@ -59,16 +59,41 @@ class Produtos implements WebAppModulo {
 
 }
 ```
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be expressed in Markdown.
+
 
 ### Arquivo .view
 
-O arquivo que possui a extensão ***".view"*** será responsável pela parte visual do nosso modulo.
+O arquivo que possui a extensão ***".view"*** será responsável pela parte visual do nosso modulo. É dentro desse arquivo que serão realizadas alterações para modificar a tela. Abaixo segue como deve ficar o código da camada 'view', ainda usando o nosso exemplo de um modulo chamado produtos. 
 
- Existem situações onde esse arquivo não será usado, por exemplo no caso de um modulo composto que não possui uma view, mas contém submodulos onde estes sim possuem suas respectivas views. 
-  Pra ficar mais fácil de entender, pegue como exemplo um modulo chamado clientes, que tem a tarefa de gerenciar os clientes da empresa. O modulo clientes em si não possui a camada view, mas este modulo contém dois sub-modulos: clientes_formulario e clientes_relatório, onde cada um desses submodulos possuem a sua camada view.   
+ 
+``` dart linenums="1" 
+import 'package:custom_app/custom_app/web_app/web_app.imports.dart';
+import 'package:flutter/material.dart';
+import '../modulos.imports.dart';
 
+
+class UsuariosView extends WebAppWidget {
+  @override
+  String displayName;
+
+  @override
+  WebAppModulo modulo;
+
+  UsuariosController usuariosController = UsuariosController();
+
+
+  UsuariosView({
+    this.displayName,
+    @required this.modulo,
+  });
+
+  @override
+  Widget buildView(BuildContext context) {
+    return Container(); 
+  }
+}
+
+```
 
 
 

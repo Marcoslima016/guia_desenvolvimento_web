@@ -5,6 +5,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed
   - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
