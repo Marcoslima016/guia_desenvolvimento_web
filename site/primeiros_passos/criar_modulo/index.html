@@ -10,18 +10,18 @@
       
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.11">
     
     
       
-        <title>Criar modulo - Docs Flutter ERP</title>
+        <title>Criar modulo genérico - Docs Flutter ERP</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3754935a.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -40,8 +40,12 @@
     
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     
       
+
+
     
     
   </head>
@@ -98,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Criar modulo
+              Criar modulo genérico
             
           </span>
         </div>
@@ -207,7 +211,7 @@
   
     <li class="md-nav__item">
       <a href="../intro.md" class="md-nav__link">
-        Intrudução
+        Introdução
       </a>
     </li>
   
@@ -228,6 +232,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../intro_modulos.md" class="md-nav__link">
+        Introdução sobre modulos
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -240,12 +256,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Criar modulo
+          Criar modulo genérico
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Criar modulo
+        Criar modulo genérico
       </a>
       
         
@@ -278,13 +294,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#arquivo-view" class="md-nav__link">
-    Arquivo .view
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#arquivo-modulo" class="md-nav__link">
     Arquivo .modulo
   </a>
@@ -292,8 +301,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pasta-sub-modulos" class="md-nav__link">
-    Pasta sub-modulos
+  <a href="#arquivo-view" class="md-nav__link">
+    Arquivo .view
   </a>
   
 </li>
@@ -303,10 +312,83 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#3-publicar-o-modulo" class="md-nav__link">
+    3. Publicar o modulo
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../null.md" class="md-nav__link">
+        Criar modulo system
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../montar_tela.md" class="md-nav__link">
+        Montar uma tela
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Widgets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Widgets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Widgets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../widgets/intro.md" class="md-nav__link">
+        Intr0dução
+      </a>
     </li>
   
 
@@ -358,13 +440,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#arquivo-view" class="md-nav__link">
-    Arquivo .view
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#arquivo-modulo" class="md-nav__link">
     Arquivo .modulo
   </a>
@@ -372,14 +447,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pasta-sub-modulos" class="md-nav__link">
-    Pasta sub-modulos
+  <a href="#arquivo-view" class="md-nav__link">
+    Arquivo .view
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-publicar-o-modulo" class="md-nav__link">
+    3. Publicar o modulo
+  </a>
   
 </li>
       
@@ -397,7 +479,7 @@
                 
                 
                 <h1 id="criar-modulo">Criar modulo<a class="headerlink" href="#criar-modulo" title="Permanent link"></a></h1>
-<p>Instruções de como criar um modulo</p>
+<p>Instruções de como criar um modulo genérico. Modulos genéricos são todos os outros módulos que existem além do modulo system. A aplicação é composta do modulo System, referente a aplicação em si (O sistema). O system por sua vez é formado por vários módulos genéricos.  </p>
 <h2 id="1-criar-diretorio">1. Criar diretório<a class="headerlink" href="#1-criar-diretorio" title="Permanent link"></a></h2>
 <!-- Dentro da pasta modulos, crie a pasta do modulo e dentro dessa nova pasta crie os arquivos que vão compor o modulo, da seguinte forma: -->
 
@@ -406,14 +488,45 @@
 <p>Nos próximos passos iremos preencher os conteúdos dos arquivos criados, por enquanto podem ficar vazios. </p>
 <h2 id="2-estrutura-e-arquivos">2. Estrutura e arquivos<a class="headerlink" href="#2-estrutura-e-arquivos" title="Permanent link"></a></h2>
 <p>Nesse próximo passo iremos entender cada arquivo que compõe a estrutura de um módulo.</p>
+<h3 id="arquivo-modulo">Arquivo .modulo<a class="headerlink" href="#arquivo-modulo" title="Permanent link"></a></h3>
+<p>O arquivo que possui a extensão <strong><em>".modulo"</em></strong> é o arquivo de acesso e configuração do nosso modulo. Esse arquivo disponibiliza a view e o controller do nosso modulo. Confira abaixo como deve ficar o conteúdo do arquivo, utilizando como exemplo um modulo chamado "produtos". </p>
+<p><div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="s1">&#39;package:custom_app/custom_app/custom_app.imports.dart&#39;</span><span class="p">;</span>
+<span class="k">import</span> <span class="s1">&#39;package:custom_app/custom_app/web_app/web_app.imports.dart&#39;</span><span class="p">;</span>
+<span class="k">import</span> <span class="s1">&#39;package:flutter/material.dart&#39;</span><span class="p">;</span>
+<span class="k">import</span> <span class="s1">&#39;produtos.view.dart&#39;</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Produtos</span> <span class="kd">implements</span> <span class="n">WebAppModulo</span> <span class="p">{</span>
+
+  <span class="nd">@override</span>
+  <span class="kt">String</span> <span class="n">displayName</span> <span class="o">=</span> <span class="s2">&quot;Produtos&quot;</span><span class="p">;</span>
+
+  <span class="nd">@override</span>
+  <span class="kt">int</span> <span class="n">idModulo</span> <span class="o">=</span> <span class="m">1</span><span class="p">;</span> <span class="err">#</span> <span class="p">(</span><span class="m">1</span><span class="p">)</span> 
+
+  <span class="nd">@override</span>
+  <span class="n">WebModuleView</span> <span class="kd">get</span> <span class="n">view</span> <span class="o">=&gt;</span> <span class="n">WebModuleView</span><span class="p">.</span><span class="n">basic</span><span class="p">(</span>
+    <span class="nl">widget:</span> <span class="n">ProdutosView</span><span class="p">(</span>
+      <span class="nl">displayName:</span> <span class="n">displayName</span><span class="p">,</span>  <span class="c1">/// A view recebe o parametro &#39;displayName&#39;</span>
+      <span class="nl">modulo:</span> <span class="k">this</span><span class="p">,</span>  <span class="c1">/// A view recebe o porametro &#39;modulo&#39;</span>
+    <span class="p">),</span>
+  <span class="p">);</span>
+
+  <span class="nd">@override</span>
+  <span class="n">MenuPiece</span> <span class="n">menuPiece</span> <span class="o">=</span> <span class="n">MenuPiece</span><span class="p">.</span><span class="n">apartButton</span><span class="p">(</span>
+    <span class="nl">buttonTitle:</span> <span class="s2">&quot;Produtos&quot;</span><span class="p">,</span>   <span class="c1">// Texto do botão</span>
+    <span class="nl">menuPos:</span> <span class="m">1</span><span class="p">,</span> <span class="c1">// Posição do botão no menu </span>
+    <span class="nl">icon:</span> <span class="n">Icons</span><span class="p">.</span><span class="n">person_outline</span><span class="p">,</span>  <span class="c1">// Icone do botão </span>
+  <span class="p">);</span>
+
+<span class="p">}</span>
+</code></pre></div>
+1.  <img alt="🙋‍♂️" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> I'm a code annotation! I can contain <code>code</code>, <strong>formatted
+    text</strong>, images, ... basically anything that can be expressed in Markdown.</p>
 <h3 id="arquivo-view">Arquivo .view<a class="headerlink" href="#arquivo-view" title="Permanent link"></a></h3>
 <p>O arquivo que possui a extensão <strong><em>".view"</em></strong> será responsável pela parte visual do nosso modulo.</p>
 <p>Existem situações onde esse arquivo não será usado, por exemplo no caso de um modulo composto que não possui uma view, mas contém submodulos onde estes sim possuem suas respectivas views. 
   Pra ficar mais fácil de entender, pegue como exemplo um modulo chamado clientes, que tem a tarefa de gerenciar os clientes da empresa. O modulo clientes em si não possui a camada view, mas este modulo contém dois sub-modulos: clientes_formulario e clientes_relatório, onde cada um desses submodulos possuem a sua camada view.   </p>
-<h3 id="arquivo-modulo">Arquivo .modulo<a class="headerlink" href="#arquivo-modulo" title="Permanent link"></a></h3>
-<p>O arquivo que possui a extensão <strong><em>".modulo"</em></strong> é o arquivo de acesso e controle do nosso modulo. Esse arquivo disponibiliza a view e o controller do nosso modulo</p>
-<h3 id="pasta-sub-modulos">Pasta sub-modulos<a class="headerlink" href="#pasta-sub-modulos" title="Permanent link"></a></h3>
-<p>Um modulo pode ser composto de diferentes sub-modulos conforme for necessário. Na maioria dos casos os modulos seguem um padrão de dois sub-modulos, sendo um deles referente a tela de formulário e o outro sub-modulo é referente a tela de relatório.</p>
+<h2 id="3-publicar-o-modulo">3. Publicar o modulo<a class="headerlink" href="#3-publicar-o-modulo" title="Permanent link"></a></h2>
                 
               
               
@@ -449,10 +562,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
       
     
   </body>

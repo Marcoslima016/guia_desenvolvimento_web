@@ -11,13 +11,16 @@ markdown_extensions:
   - toc:
       permalink: 
 
+extra_css:
+  - stylesheets/extra.css   
+
 nav:
   - Primeiros passos: 
     - Introdução: primeiros_passos/intro.md
     - Arquitetura & organização de projeto:  primeiros_passos/arq_org.md
     - Introdução sobre modulos:  primeiros_passos/intro_modulos.md  # Faz uma introdução sobre os modulos, oq sao, pra q servem, etc. Fala sobre a diferenção entre os tipos de modulos ( modulo system e modulos genericos ) 
-    - Criar modulo generico: primeiros_passos/criar_modulo.md
-    - Criar modulo system: primeiros_passos/criar_modulo.md  # talvez nao precisa ter esse topico, afinal o modulo index é algo fixo que nao vai precisar ficar sendo criado diversas vezes igual o modulo generico
+    - Criar modulo genérico: primeiros_passos/criar_modulo.md
+    - Criar modulo system: primeiros_passos/null.md  # talvez nao precisa ter esse topico, afinal o modulo index é algo fixo que nao vai precisar ficar sendo criado diversas vezes igual o modulo generico
     - Montar uma tela: primeiros_passos/montar_tela.md
   - Widgets: 
     - Intr0dução: widgets/intro.md
@@ -25,6 +28,10 @@ nav:
 theme:
   name: null
   custom_dir: mkdocs-material/material
+  features:
+    - content.code.annotate 
+
+   
 
   palette:
     primary: teal
