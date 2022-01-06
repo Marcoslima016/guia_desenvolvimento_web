@@ -1,4 +1,4 @@
-# Guia de desenvolvimento mobile  Docs
+# Guia de desenvolvimento web  Docs
 
 <!-- For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 

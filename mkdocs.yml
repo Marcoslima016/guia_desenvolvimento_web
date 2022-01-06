@@ -1,4 +1,4 @@
-site_name: Docs Guia de desenvolvimento mobile 
+site_name: Guia de desenvolvimento web 
 
 markdown_extensions:
   - pymdownx.highlight
@@ -20,7 +20,7 @@ nav:
     - Criar modulo system: primeiros_passos/criar_modulo.md  # talvez nao precisa ter esse topico, afinal o modulo index é algo fixo que nao vai precisar ficar sendo criado diversas vezes igual o modulo generico
     - Montar uma tela: primeiros_passos/montar_tela.md
   - Widgets: 
-    - Intr0dução: widgets/intro.md
+    - Introdução: widgets/intro.md
 
 theme:
   name: null
