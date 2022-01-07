@@ -26,6 +26,8 @@ nav:
     - Montar uma tela: primeiros_passos/montar_tela.md
   - Widgets: 
     - Introdução: widgets/intro.md
+  - Menu lateral: menu_lateral.md 
+
 
 theme:
   name: null
