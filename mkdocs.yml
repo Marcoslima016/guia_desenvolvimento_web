@@ -26,7 +26,13 @@ nav:
     - Montar uma tela: primeiros_passos/montar_tela.md
   - Widgets: 
     - Introdução: widgets/intro.md
-  - Menu lateral: menu_lateral.md 
+  - Instruções debug: debug/inst.md
+  - Menu lateral: 
+    - Resumo: menu_lateral/resumo.md
+    - Background ( Fluxo de Funcionamento ): menu_lateral/backgorund.md
+    - Definir categorias do menu: menu_lateral/backgorund.md
+    - Inserir entrada de um modulo no menu: menu_lateral/backgorund.md
+
 
 
 theme:
