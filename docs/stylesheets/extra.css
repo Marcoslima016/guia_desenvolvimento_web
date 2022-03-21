@@ -41,16 +41,19 @@ font-weight: 600;
     width:100%;
 }
 
-.md-typeset h1,
+.md-typeset h1{
+  color: black;
+  font-weight: 700;
+}
 .md-typeset h2 {
-  font-weight: bold;
+  font-weight:600;
 }
 .md-typeset h3 {
     font-weight: 600;
-    color:grey;
-  }
-  .md-typeset h4 {
-    font-weight: 600;
-    color:grey;
-  }
+    color:rgb(80, 80, 80);
+}
+.md-typeset h4 {
+  font-weight: 600;
+  color:grey;
+}
  

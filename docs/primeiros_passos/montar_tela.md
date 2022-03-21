@@ -1,0 +1,1 @@
+<!-- explica o passo a passo de como montar uma tela, explicando a utilização de PageAreas, items, etc. Irá apontar para documentacoes mais detalhadas de cada assunto. -->

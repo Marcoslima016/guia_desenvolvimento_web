@@ -1,3 +1,9 @@
+# 
+# 
+# https://docs.oracle.com/en/database/oracle/application-express/21.2/htmdb/understanding-forms-types.html#GUID-003D4596-6A9B-4D17-A730-DAFB2D8B805F
+
+
+
 site_name: Guia de desenvolvimento web 
 
 markdown_extensions:
@@ -23,15 +29,30 @@ nav:
     - Introdução sobre modulos:  primeiros_passos/intro_modulos.md  # Faz uma introdução sobre os modulos, oq sao, pra q servem, etc. Fala sobre a diferenção entre os tipos de modulos ( modulo system e modulos genericos ) 
     - Criar modulo genérico: primeiros_passos/criar_modulo.md
     - Criar modulo system: primeiros_passos/null.md  # talvez nao precisa ter esse topico, afinal o modulo index é algo fixo que nao vai precisar ficar sendo criado diversas vezes igual o modulo generico
-    - Montar uma tela: primeiros_passos/montar_tela.md
-  - Widgets: 
-    - Introdução: widgets/intro.md
+    - Montar uma tela: primeiros_passos/montar_tela.md # explica o passo a passo de como montar uma tela, explicando a utilização de PageAreas, items, etc. Irá apontar para documentacoes mais detalhadas de cada assunto.
+  # - Widgets: 
+  #   - Introdução: widgets/intro.md
   - Instruções debug: debug/inst.md
   - Menu lateral: 
     - Resumo: menu_lateral/resumo.md
     - Background ( Fluxo de Funcionamento ): menu_lateral/backgorund.md
     - Definir categorias do menu: menu_lateral/backgorund.md
     - Inserir entrada de um modulo no menu: menu_lateral/backgorund.md
+  #-----------------------------------------------------------------------------------  
+  # Ira conter topicos relacionados a elementos utilizados na ui (PageAreas, Buttons, Items, etc ) 
+  - Elementos de UI: 
+    - Introdução: elementos_ui/intro.md
+    - PageAreas: elementos_ui/page_areas.md # Contem topicos relacionados a todas as page areas ( Blank, Report )
+    - Buttons: elementos_ui/buttons.md
+  #-----------------------------------------------------------------------------------  
+  # Ira conter guias e tutoriais mais especificos, explicando, atraves de situacoes do cotidiano, como implementar conceitos vistos anteriormente
+  - Guias e Tutoriais: 
+    - Montar uma tela simples: guias_tutoriais/montar_tela_simples.md
+    - Montar uma tela de relatório: guias_tutoriais/montar_tela_relatorio.md # nessa pagina sera explicado como montar uma tela composta de relatorio
+    - Montar uma tela de formulário: guias_tutoriais/montar_tela_form.md
+
+
+
 
 
 
