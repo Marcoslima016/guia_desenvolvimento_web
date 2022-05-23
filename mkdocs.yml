@@ -45,6 +45,11 @@ nav:
     - PageAreas: elementos_ui/page_areas.md # Contem topicos relacionados a todas as page areas ( Blank, Report )
     - Buttons: elementos_ui/buttons.md
   #-----------------------------------------------------------------------------------  
+  # Ira conter topicos relacionados a elementos utilizados na ui (PageAreas, Buttons, Items, etc ) 
+  - Elementos de Lógica:
+  - Introdução: elementos_logica/intro.md
+
+  #-----------------------------------------------------------------------------------  
   # Ira conter guias e tutoriais mais especificos, explicando, atraves de situacoes do cotidiano, como implementar conceitos vistos anteriormente
   - Guias e Tutoriais: 
     - Montar uma tela simples: guias_tutoriais/montar_tela_simples.md
