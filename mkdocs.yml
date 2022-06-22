@@ -47,7 +47,7 @@ nav:
   #-----------------------------------------------------------------------------------  
   # Ira conter topicos relacionados a elementos utilizados na ui (PageAreas, Buttons, Items, etc ) 
   - Elementos de Lógica:
-  - Introdução: elementos_logica/intro.md
+    - Introdução: elementos_logica/intro.md
 
   #-----------------------------------------------------------------------------------  
   # Ira conter guias e tutoriais mais especificos, explicando, atraves de situacoes do cotidiano, como implementar conceitos vistos anteriormente
